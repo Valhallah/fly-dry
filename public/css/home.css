@@ -1,1 +1,35 @@
+.parallax {
+    /*background-image: url("../img/prettywoman.jpg");*/
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.info {
+  height:200px;
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+}
+
+.sign-up {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.footer {
+  height:80px;
+  background-color: gray;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .parallax {
+     background-attachment: scroll;
+ }
+}

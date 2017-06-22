@@ -1,0 +1,48 @@
+.container {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+.profile-img{
+  margin-top: 100px;
+  width: 400px;
+  height: 500px;
+}
+
+.profile-form {
+  margin: 200px auto;
+  width: 400px;
+  height: 500px;
+}
+
+.profile-form input {
+  border-radius: 0px;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+.footer {
+  height:80px;
+  background-color: gray;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .profile-img {
+     display: none;
+ }
+
+ .profile-form {
+  margin: 200px auto;
+  width: 300px;
+  height: 400px;
+ }
+}

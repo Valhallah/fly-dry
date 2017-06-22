@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../public/css/checkout.css">
+  <title>Fly-Dry Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#">Dryfly</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="#" class="glyphicon glyphicon-shopping-cart"></a></li>
+          <li><a href="#">log in</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">services</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+
+      </div>
+      <div class="col-s-12 col-md-6 col-12-6">
+        <form method="POST" class="checkout-form center-block">
+          <label>Billing Address</label>
+          <div class="form-group">
+            <input type="text" class="form-control" id="addrStreet" placeholder="Street">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control" id="addrCity" placeholder="City">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control" id="addrState" placeholder="State">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control" id="addrZipCode" placeholder="Zip Code">
+          </div>
+          <input type="checkbox" value="" id="serviceAddrConfirmation"> I want to receive my service at a different address
+        </form>
+      </div>
+      <div class="col-s-12 col-md-6 col-12-6">
+        <form method="POST" class="checkout-form center-block">
+          <label>Payment</label>
+          <div class="form-group"><a href="#">
+            <select type="text" class="form-control" id="CardType" placeholder="Visa">
+              <option>Visa</option>
+              <option>Mastercard</option>
+              <option>Express</option>
+              <option>Discover</option>
+            </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control" id="cardNum" placeholder="Card #">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control" id="cardName" placeholder="Name on Card">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="date" class="form-control" id="cardExDate" placeholder="Expiration Date">
+          </div>
+          <button href="#" type="submit" class="btn btn-default center-block">Submit</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-m-12">
+          <form method="POST" class="center-block service-address" id="serviceAddrForm" style="display: none;">
+            <label>Service Address</label>
+            <div class="form-group">
+              <input type="text" class="form-control" id="addrStreet" placeholder="Street">
+            </div>
+            <br>
+            <div class="form-group">
+              <input type="text" class="form-control" id="addrCity" placeholder="City">
+            </div>
+            <br>
+            <div class="form-group">
+              <input type="text" class="form-control" id="addrState" placeholder="State">
+            </div>
+            <br>
+            <div class="form-group">
+              <input type="text" class="form-control" id="addrZipCode" placeholder="Zip Code">
+            </div>
+            <button href="#" type="submit" class="btn btn-default center-block">Submit</button>
+          </form>
+      </div>
+  </div>
+</div>
+</div>
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../public/js/checkout.js"></script>
+  <script src="../js/bootstrap.min.js">
+  </script>
+</body>
+</html>

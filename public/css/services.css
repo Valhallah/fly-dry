@@ -1,0 +1,41 @@
+.container {
+  min-height: 70%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+.thumbnail img {
+  position: relative;
+  width: 240px;
+  height: 370px;
+  margin: 0px auto;
+}
+
+.img-wrap {
+  margin: 100px;
+}
+
+.img-label {
+  position: absolute;
+  text-align: center;
+   top: 200px;
+   left: -10;
+   width: 100%;
+}
+
+.footer {
+  height:80px;
+  background-color: gray;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .thumbnail img {
+     width: 250px;
+     height: 250px;
+ }
+}
