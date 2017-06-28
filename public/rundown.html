@@ -10,14 +10,17 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="../public/css/services.css">
+  <link rel="stylesheet" type="text/css" href="css/rundown.css">
   <title>Fly-Dry Home</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top nav">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -27,7 +30,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href="#">Dryfly</a>
+        <a class="navbar-brand" href="/">Dryfly</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav pull-right">
@@ -35,58 +38,32 @@
           <li><a href="#">log in</a></li>
           <li><a href="#">about</a></li>
           <li><a href="#">services</a></li>
-
         </ul>
       </div>
     </div>
   </nav>
-<div class="container img-wrap">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-3">
-      <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal">
-        <img src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="..." >
-        <label class="img-label">Blowout</label>
-      </a>
-    </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Blowout</h4>
-          </div>
-          <div class="modal-body">
-            <button href="#" type="submit" class="btn btn-default">add service</button>
-          </div>
-          <div class="modal-footer">
-          </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-s-12 col-md-6 col-12-6">
+        <div id="style" class="order-title center-block">
+          <h1>Your Style</h1>
+          <div id="styleName"></div>
+        </div>
+        <div id="stylist" class="order-title center-block">
+          <h1>Your Stylist</h1>
+          <div id="stylistName"></div>
+        </div>
+        <div id="appt" class="order-title center-block">
+          <h1>Your Appointment Time</h1>
+          <div id="apptTime"></div>
         </div>
       </div>
+      <div class="col-s-12 col-md-6 col-12-6">
+        <img class="rundown-img center-block" src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="...">
     </div>
-
-    <div class="col-xs-12 col-sm-12 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="...">
-        <label class="img-label">Dry Style</label>
-      </a>
-    </div>
-
-    <div class="col-xs-12 col-sm-12 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="...">
-        <label class="img-label">Updo</label>
-      </a>
-    </div>
-
-    <div class="col-xs-12 col-sm-12 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="...">
-        <label class="img-label">Party</label>
-      </a>
-    </div>
-
   </div>
 </div>
-
 
   <footer class="footer">
     <div class="container">
@@ -95,7 +72,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="../public/js/services.js"></script>
+  <script href="js/home.js"></script>
   <script src="../js/bootstrap.min.js">
   </script>
 </body>
