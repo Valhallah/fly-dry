@@ -46,19 +46,24 @@
 <div class="container img-wrap">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-3">
-      <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal">
+      <a href="#" id="blowout" class="thumbnail" data-toggle="modal" data-target="#blowout_modal">
         <img src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="..." >
         <label class="img-label">Blowout</label>
       </a>
     </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade service-modal" id="blowout_modal" value="50" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title" id="myModalLabel">Blowout</h4>
           </div>
           <div class="modal-body">
-            <button href="#" type="submit" class="btn btn-default">add service</button>
+            <h4>$50</h4>
+            <p>Our signature service. One of our stylists will come to your location and blowdry your hair to perfection</p>
+            <!-- <button href="#" class="btn btn-default">add service</button> -->
+                  <!--<input type="radio" data-type="blowout" data-price="59" name="blowout" id="blowout">-->
+            <button type="button" class="btn btn-default" name="blowout">Add Blowout</button>
+
           </div>
           <div class="modal-footer">
           </div>
@@ -67,27 +72,97 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-3">
-      <a href="#" class="thumbnail">
+      <a href="#" id="dry_style" class="thumbnail" data-toggle="modal" data-target="#dryStyle_modal">
         <img src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="...">
         <label class="img-label">Dry Style</label>
       </a>
     </div>
 
+    <div class="modal fade service-modal" id="dryStyle_modal" value="40" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Dry Style</h4>
+          </div>
+          <div class="modal-body">
+            <h4>$40</h4>
+            <p>In a hurry? We'll style your already-dry-hair in a flash.</p>
+            <!-- <button href="#" class="btn btn-default">add service</button> -->
+            <button type="button" class="btn btn-default" name="dry-style">Add Dry Style</button>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="col-xs-12 col-sm-12 col-md-3">
-      <a href="#" class="thumbnail">
+      <a href="#" id="updo" class="thumbnail" data-toggle="modal" data-target="#updo_modal">
         <img src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="...">
         <label class="img-label">Updo</label>
       </a>
     </div>
+    <div class="modal fade service-modal" id="updo_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Updo</h4>
+          </div>
+          <div class="modal-body">
+            <h4>$70</h4>
+            <p>Let our master stylists make you look unforgettable on your big night.</p>
+            <!-- <button href="#" class="btn btn-default">add service</button> -->
+            <button type="button" class="btn btn-default" name="updo">Add Updo</button>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="col-xs-12 col-sm-12 col-md-3">
-      <a href="#" class="thumbnail">
+      <a href="#" id="party" class="thumbnail" data-toggle="modal" data-target="#party_modal">
         <img src="http://www.euneighbours.eu/sites/default/files/2017-01/placeholder.png" alt="...">
         <label class="img-label">Party</label>
       </a>
     </div>
-
+    <div class="modal fade service-modal" id="party_modal" value="60" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Party</h4>
+          </div>
+          <div class="modal-body">
+            <h4>$60 per person</h4>
+            <p>Wedding? Bachelorette? Baby shower? We've got you covered.</p>
+            <!-- <button href="#" class="btn btn-default">add service</button> -->
+            <button type="button" class="btn btn-default" name="party">Add Party</button>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-s-12 col-m-12 col-ld-12">
+  <form class="center-block">
+  <div class="form-group">
+    <label for="date-inuput">Date</label>
+    <input type="date" class="form-control" id="appt_date" name="apt_date" required>
+  </div>
+  <div class="form-group">
+    <label for="time-input">Time</label>
+    <input type="time" class="form-control" id="appt_time" name="apt_time" required>
+  </div>
+  <button id="submitBtn" class="btn btn-default center-block" type="submit">Submit</button>
+</form>
+  </div>
+</div>
 </div>
 
 
@@ -99,7 +174,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/services.js"></script>
-  <script src="../js/bootstrap.min.js">
   </script>
 </body>
 </html>

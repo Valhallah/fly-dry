@@ -45,24 +45,35 @@
   <div class="container">
     <div class="row">
       <div class="col-s-12 col-md-6 col-12-6">
-        <form method="POST" class="checkout-form center-block">
+        <form method="POST" action="/api/banans" class="checkout-form center-block">
           <label>Billing Address</label>
           <div class="form-group">
-            <input type="text" class="form-control" id="addrStreet" placeholder="Street">
+            <input type="text" class="form-control" id="b_addr_street" name="addr_city" placeholder="Street">
           </div>
           <br>
           <div class="form-group">
-            <input type="text" class="form-control" id="addrCity" placeholder="City">
+            <input type="text" class="form-control" id="b_addr_city" name="addr_city" placeholder="City">
           </div>
           <br>
           <div class="form-group">
-            <input type="text" class="form-control" id="addrState" placeholder="State">
+            <input type="text" class="form-control" id="b_addr_state" placeholder="State">
           </div>
           <br>
           <div class="form-group">
-            <input type="text" class="form-control" id="addrZipCode" placeholder="Zip Code">
+            <input type="text" class="form-control" id="b_addr_zip" placeholder="Zip Code">
           </div>
-          <input type="checkbox" value="" id="serviceAddrConfirmation"> I want to receive my service at a different address
+          <button href="#" id="submitBtn" class="btn btn-default center-block">Submit</button>
+
+          <form action="/your-server-side-code" method="POST" id="paymentForm">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_PjvIDOwofr03ldWnOe3LZo9z"
+            data-name="DryFly"
+            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+            data-locale="auto">
+          </script>
+</form>
+          <!-- <input type="checkbox" value="" id="serviceAddrConfirmation"> I want to receive my service at a different address -->
         </form>
       </div>
       <div class="col-s-12 col-md-6 col-12-6">
@@ -78,42 +89,43 @@
           </div>
           <br>
           <div class="form-group">
-            <input type="text" class="form-control" id="cardNum" placeholder="Card #">
+            <input type="text" class="form-control" id="card_num" name="card_num" placeholder="Card #">
           </div>
           <br>
           <div class="form-group">
-            <input type="text" class="form-control" id="cardName" placeholder="Name on Card">
+            <input type="text" class="form-control" id="card_name" name="card_name" placeholder="Name on Card">
           </div>
           <br>
           <div class="form-group">
-            <input type="date" class="form-control" id="cardExDate" placeholder="Expiration Date">
+            <input type="date" class="form-control" id="card_ex_date" name="card_ex_date" placeholder="Expiration Date">
           </div>
-          <button href="#" type="submit" class="btn btn-default center-block">Submit</button>
+          <!-- <button href="#" type="submit" class="btn btn-default center-block">Submit</button> -->
         </form>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-m-12">
-          <form method="POST" class="center-block service-address" id="serviceAddrForm" style="display: none;">
+          <!-- style="display: none;" -->
+          <!-- <form method="POST" class="center-block service-address" id="serviceAddrForm">
             <label>Service Address</label>
             <div class="form-group">
-              <input type="text" class="form-control" id="addrStreet" placeholder="Street">
+              <input type="text" class="form-control" id="s_addr_street" name="s_addr_street" placeholder="Street">
             </div>
             <br>
             <div class="form-group">
-              <input type="text" class="form-control" id="addrCity" placeholder="City">
+              <input type="text" class="form-control" id="s_addr_city" name="s_addr_city" placeholder="City">
             </div>
             <br>
             <div class="form-group">
-              <input type="text" class="form-control" id="addrState" placeholder="State">
+              <input type="text" class="form-control" id="s_addr_state" name="s_addr_state" placeholder="State">
             </div>
             <br>
             <div class="form-group">
-              <input type="text" class="form-control" id="addrZipCode" placeholder="Zip Code">
+              <input type="text" class="form-control" id="s_addr_zip" name="s_addr_zip" placeholder="Zip Code">
             </div>
-            <button href="#" type="submit" class="btn btn-default center-block">Submit</button>
+            <button href="#" id="#submitBtn" class="btn btn-default center-block">Submit</button>
           </form>
       </div>
-  </div>
+  </div>  -->
 </div>
 </div>
   <footer class="footer">
@@ -124,7 +136,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/checkout.js"></script>
-  <script src="../js/bootstrap.min.js">
   </script>
 </body>
 </html>

@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
       apt_num: {
-        type: DataTypes.DATEONLY
+        type: DataTypes.INTEGER
     },
     city: {
       type: DataTypes.STRING
@@ -13,7 +13,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
     zip: {
-      type: DataTypes.STRING
+      type: DataTypes.INTEGER
     }
   });
 return Location;

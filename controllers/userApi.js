@@ -19,5 +19,28 @@ router.post('/users', function(req, res) {
     res.json(data);
   });
 });
+// router.get("/users/:id", function(req, res) {
+//   db.User.findOne({
+//     where: {
+//       id: req.params.id
+//     }
+//   }).then(function(user) {
+//     res.json(user);
+//   });
+//
+// });
+
+
+// router.put("/users", function(req, res) {
+// db.User.update(req.body,
+//   {
+//     where: {
+//       id: req.body.id
+//     }
+//   })
+// .then(function(userData) {
+//   res.json(UserData);
+// });
+// });
 
 module.exports = router

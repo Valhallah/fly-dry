@@ -1,14 +1,15 @@
 const express = require('express');
-const app = express();
+let app = express();
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const db = require("./models");
 
-const index = require('./controllers/index');
-const users = require('./controllers/api');
 
-var api = require('./controllers/api')
+const index = require('./controllers/index');
+const userApi = require('./controllers/userApi');
+const purchase = require('./controllers/purchaseApi');
+const location = require('./controllers/locationApi');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -19,7 +20,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/api', api);
+app.use('/api', userApi);
+app.use('/api', purchase);
+app.use('/api', location);
 
 // catch 404 and forward to error handler
 // app.use(function(req, res, next) {

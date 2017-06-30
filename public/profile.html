@@ -52,21 +52,20 @@
        <div class="col-s-12 col-md-6 col-12-6 center-block">
          <form method="POST" class="profile-form">
            <div class="form-group"><a href="#"><span class="glyphicon glyphicon-pencil pull-right"></span></a>
-             <input type="text" class="form-control" id="formName" placeholder="name">
+             <label>name</label>
+             <input type="text" class="form-control" id="formName" name="formName" placeholder="'Fabulous McFancypants'">
            </div>
            <br>
            <div class="form-group">
-             <input type="text" class="form-control" id="formDOB" placeholder="birthdate">
+             <label>e-mail</label>
+             <input type="email" class="form-control" id="formEmail" name="formEmail" placeholder="'Fabfancpants@awesome.com'">
            </div>
            <br>
            <div class="form-group">
-             <input type="email" class="form-control" id="formEmail" placeholder="Email">
+            <label>password</label>
+             <input type="password" class="form-control" id="formPassword" name="formPassword" placeholder="must be at least 6 characters">
            </div>
-           <br>
-           <div class="form-group">
-             <input type="password" class="form-control" id="formPassword" placeholder="Password">
-           </div>
-           <button href="/profile" class="btn btn-default center-block" id="submitBtn">Submit</button>
+           <button href="/services" class="btn btn-default center-block" id="submitBtn">Submit</button>
          </form>
        </div>
    </div>

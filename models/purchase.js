@@ -4,10 +4,13 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING
     },
       purchase_price: {
-        type: DataTypes.DATEONLY
+        type: DataTypes.INTEGER
     },
     appt_time: {
-      type: DataTypes.STRING
+      type: DataTypes.TIME
+    },
+    appt_date: {
+      type: DataTypes.DATEONLY
     }
   });
 return Purchase;
